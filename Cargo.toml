@@ -1,0 +1,14 @@
+[package]
+name = "audio-to-text"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+druid = "0.8.3"
+reqwest = { version = "0.12.9", features = ["blocking", "multipart", "stream"] }
+tokio = { version = "1.41.0", features = ["rt-multi-thread"] }
+
+[package.metadata.bundle]
+name = "Audio To Text"
+identifier = "com.antonds.Transcriber"
+version = "0.1.0"
